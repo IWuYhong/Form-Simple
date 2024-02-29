@@ -1,0 +1,95 @@
+/* Reset de estilos */
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #3498db, #2980b9); /* Fondo gradual azul */
+  color: #ffffff; /* Texto blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inline{
+  display:inline-flex;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mínima */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0; /* Elimina el margen inferior */
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px; /* Puedes ajustar el margen inferior según tus preferencias */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  background-color: #fff; /* Fondo blanco */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8800; /* Naranja */
+  color: #fff; /* Texto blanco */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff9500; /* Naranja claro al pasar el ratón */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: calc(100% - 20px); /* Ajuste de tamaño para dispositivos móviles */
+  }
+}

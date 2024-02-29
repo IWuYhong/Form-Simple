@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto #1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Agregamos la etiqueta meta para hacer la página responsive -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1 id="title">Formulario</h1>
+      <p id="description">Por favor complete este formulario correspondiente</p>
+    </div>
+    
+      <form id="survey-form" class="login-form">
+        <div class="form-group">
+        <div class="label-container">
+          <label id="name-label">Introduce tu nombre
+            <input type="text" id="name" placeholder="Nombre" required>
+          </label>
+        </div>
+        <div class="label-container">
+          <label id="email-label">Introduce tu email
+            <input type="email" id="email" placeholder="Correo Electronico" required>
+          </label>
+        </div>
+        <div class="label-container">
+          <label id="number-label">Introduce tu edad
+            <input type="number" id="number" min="9" max="99" placeholder="Edad" required>
+          </label>
+        </div>
+    </div>
+    <div class="Estudiante">
+      <label>¿Eres estudiante o Independiente?
+        <select id="dropdown" required>
+          <option disabled selected value>Selecciona alguna profesion</option>
+          <option value="">Estudiante</option>
+          <option value="">Independiente</option>
+          <option value="">Compañía o Plantel Educativo</option>
+        </select>
+      </label>
+    <div>
+      <legend>¿Como conocistes este formulario?</legend>
+      <label class="inline"><input id="name-selection" name="selection" type="radio" value="Amigo">Amigo</label>
+      <label class="inline"><input id="name-selection" name="selection" type="radio" value="Internet">Internet</label>
+    </div> 
+    <br>
+      <div>
+        <legend>¿A que te gustaria dedicarte?</legend>
+        <label class="inline"><input id="Back-end" type="checkbox" value="backend">Back-end</label>
+        <label class="inline"><input id="Front-end" type="checkbox" value="frontend">Front-end</label>
+        <label class="inline"><input id="Freelance" type="checkbox" value="freelance">Freelance</label>
+      </div>
+      <br>
+    </div>
+    <div class="area">
+      <label>Cuentanos un poco más sobre ti
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Coloca tu Bio aqui..."
+          required></textarea>
+      </label>
+      <label>
+        <button id="submit" type="submit">
+          Enviar
+        </button>
+      </label>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
